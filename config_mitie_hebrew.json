@@ -1,0 +1,6 @@
+{
+  "pipeline": "mitie",
+  "mitie_file": "/mnt/MITIE-models/hebrew_partial/total_word_feature_extractor.dat",
+  "path" : "./models",
+  "data" : "./hebrew_data.json"
+}

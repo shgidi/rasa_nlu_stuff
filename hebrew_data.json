@@ -1,0 +1,55 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": ["Chinese", "Chines", "chines"]
+      },
+      {
+        "value": "vegetarian",
+        "synonyms": ["veggie", "vegg"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "היי", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "היוש", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "היי שם",
+        "intent": "greet", 
+        "entities": []
+      },
+      {
+        "text": "מלון טוב בנגב",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "מלון טוב",
+            "entity": "hotel type"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "value": "בנגב",
+            "entity": "specific location"
+          }
+        ]
+      }
+    ]
+  }
+}

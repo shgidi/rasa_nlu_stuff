@@ -1,0 +1,6 @@
+{
+  "pipeline": "mitie",
+  "mitie_file": "/mnt/MITIE-models/english/total_word_feature_extractor.dat",
+  "path" : "/home/ubuntu/nbs/intrctbt/models",
+  "data" : "/home/ubuntu/nbs/intrctbt/hotel_data.json"
+}

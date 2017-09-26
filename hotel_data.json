@@ -1,0 +1,1218 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": ["Chinese", "Chines", "chines"]
+      },
+      {
+        "value": "vegetarian",
+        "synonyms": ["veggie", "vegg"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "howdy", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hey there",
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hello", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hi", 
+        "intent": "greet", 
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yep", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yeah", 
+        "intent": "affirm", 
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "I am looking for a kosher hotel in tiberias",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "kosher",
+            "entity": "kosherness"
+          },
+          {
+            "start": 35,
+            "end": 43,
+            "value": "tiberias",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for a hostel in the south",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "hostel",
+            "entity": "hotel type"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "value": "south",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "I want a boutique hotel by the beach with wifi",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "boutique",
+            "entity": "hotel type"
+          },
+          {
+            "start": 31,
+            "end": 36,
+            "value": "beach",
+            "entity": "location description"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "value": "wifi",
+            "entity": "internet"
+          }
+        ]
+      },
+      {
+        "text": "I have a business trip to Eilat, I want to sleep there",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 31,
+            "value": "Eilat",
+            "entity": "specific location"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "value": "business",
+            "entity": "hotel type"
+          }
+        ]
+      },
+      {
+        "text": "I need an accessible hotel in Haifa",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 20,
+            "value": "accessible",
+            "entity": "accessibility"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "Haifa",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "my wife and I need hotel in tel aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 28,
+            "end": 36,
+            "value": "tel aviv",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "Hotel which is good for kids and family",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 39,
+            "value": "kids and family",
+            "entity": "hotel type"
+          }
+        ]
+      },
+      {
+        "text": "Hotel with pool and internet",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "internet",
+            "entity": "internet"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "value": "pool",
+            "entity": "pool"
+          }
+        ]
+      },
+      {
+        "text": "Hotel with kosher meal somewhere in the north",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "kosher meal",
+            "entity": "kosherness"
+          },
+          {
+            "start": 23,
+            "end": 45,
+            "value": "somewhere in the north",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "Chef hotel",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Chef hotel",
+            "entity": "hotel type"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for a kosher hotel in tiberias",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "kosher",
+            "entity": "kosherness"
+          },
+          {
+            "start": 35,
+            "end": 43,
+            "value": "tiberias",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for a hostel in the south",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "hostel",
+            "entity": "hotel type"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "value": "south",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "I want a boutique hotel by the beach with wifi",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "boutique",
+            "entity": "hotel type"
+          },
+          {
+            "start": 31,
+            "end": 36,
+            "value": "beach",
+            "entity": "location description"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "value": "wifi",
+            "entity": "internet"
+          }
+        ]
+      },
+      {
+        "text": "I have a business trip to Eilat, I want to sleep there",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 31,
+            "value": "Eilat",
+            "entity": "specific location"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "value": "business",
+            "entity": "hotel type"
+          }
+        ]
+      },
+      {
+        "text": "I need an accessible hotel in Haifa",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 20,
+            "value": "accessible",
+            "entity": "accessibility"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "Haifa",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "my wife and I need hotel in tel aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 28,
+            "end": 36,
+            "value": "tel aviv",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "Hotel which is good for kids and family",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 39,
+            "value": "kids and family",
+            "entity": "hotel type"
+          }
+        ]
+      },
+      {
+        "text": "Hotel with pool and internet",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "internet",
+            "entity": "internet"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "value": "pool",
+            "entity": "pool"
+          }
+        ]
+      },
+      {
+        "text": "Hotel with kosher meal somewhere in the north",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "kosher meal",
+            "entity": "kosherness"
+          },
+          {
+            "start": 23,
+            "end": 45,
+            "value": "somewhere in the north",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "Chef hotel",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Chef hotel",
+            "entity": "hotel type"
+          }
+        ]
+      },
+      {
+        "text": "live person",
+        "intent": "Live agent",
+        "entities": []
+      },
+      {
+        "text": "can I talk to someone",
+        "intent": "Live agent",
+        "entities": []
+      },
+      {
+        "text": "give me someone to talk to",
+        "intent": "Live agent",
+        "entities": []
+      },
+      {
+        "text": "human please",
+        "intent": "Live agent",
+        "entities": []
+      },
+      {
+        "text": "can I speak to some one",
+        "intent": "Live agent",
+        "entities": []
+      },
+      {
+        "text": "I need help",
+        "intent": "Live agent",
+        "entities": []
+      },
+      {
+        "text": "help me",
+        "intent": "Live agent",
+        "entities": []
+      },
+      {
+        "text": "find me a motel in Jerusalem",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "motel",
+            "entity": "hotel type"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "value": "Jerusalem",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "great hotel near the old city in jerusalem",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "great",
+            "entity": "quality"
+          },
+          {
+            "start": 6,
+            "end": 11,
+            "value": "hotel",
+            "entity": "hotel type"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "jerusalem",
+            "entity": "specific location"
+          },
+          {
+            "start": 12,
+            "end": 29,
+            "value": "near the old city",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "hotel with a view free wifi and parking",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "with a view",
+            "entity": "location description"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "value": "free wifi",
+            "entity": "internet"
+          },
+          {
+            "start": 32,
+            "end": 39,
+            "value": "parking",
+            "entity": "parking"
+          }
+        ]
+      },
+      {
+        "text": "5 star hotel in the center of Tel Aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "5 star",
+            "entity": "quality"
+          },
+          {
+            "start": 13,
+            "end": 26,
+            "value": "in the center",
+            "entity": "location description"
+          },
+          {
+            "start": 30,
+            "end": 38,
+            "value": "Tel Aviv",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "3+ hotel near the beach in Herzeliya",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "3+",
+            "entity": "quality"
+          },
+          {
+            "start": 9,
+            "end": 23,
+            "value": "near the beach",
+            "entity": "location description"
+          },
+          {
+            "start": 27,
+            "end": 36,
+            "value": "Herzeliya",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "great hotel with kosher restaurant in Beer Sheva",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "great",
+            "entity": "quality"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "value": "kosher",
+            "entity": "kosherness"
+          },
+          {
+            "start": 38,
+            "end": 48,
+            "value": "Beer Sheva",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "best hotel in Jerusalem",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "best",
+            "entity": "quality"
+          },
+          {
+            "start": 14,
+            "end": 23,
+            "value": "Jerusalem",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "hotel in tel aviv near bus station",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "tel aviv",
+            "entity": "specific location"
+          },
+          {
+            "start": 18,
+            "end": 34,
+            "value": "near bus station",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "hotel for kids with a swimming pool in Netanya",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 35,
+            "value": "swimming pool",
+            "entity": "pool"
+          },
+          {
+            "start": 39,
+            "end": 46,
+            "value": "Netanya",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "accessible hotel near the beach",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "accessible",
+            "entity": "accessibility"
+          },
+          {
+            "start": 17,
+            "end": 31,
+            "value": "near the beach",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "hotel in Jerusalem within walking distance from the old city",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "Jerusalem",
+            "entity": "specific location"
+          },
+          {
+            "start": 19,
+            "end": 60,
+            "value": "within walking distance from the old city",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "vip hotel in the dead sea",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "vip",
+            "entity": "quality"
+          },
+          {
+            "start": 17,
+            "end": 25,
+            "value": "dead sea",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "hotel with a garden and a view in the north",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 30,
+            "value": "with a garden and a view",
+            "entity": "location description"
+          },
+          {
+            "start": 31,
+            "end": 43,
+            "value": "in the north",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "Excellent hotel in Eilat near the beach with great food",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Excellent",
+            "entity": "quality"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "value": "Eilat",
+            "entity": "specific location"
+          },
+          {
+            "start": 25,
+            "end": 39,
+            "value": "near the beach",
+            "entity": "location description"
+          },
+          {
+            "start": 45,
+            "end": 55,
+            "value": "great food",
+            "entity": "quality"
+          }
+        ]
+      },
+      {
+        "text": "hotel in Eilat for the weekend",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "Eilat",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "nice hotel in Herzelia",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "nice",
+            "entity": "quality"
+          },
+          {
+            "start": 14,
+            "end": 22,
+            "value": "Herzelia",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "kosher hotel in dimona",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "kosher",
+            "entity": "kosherness"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "value": "dimona",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "cheap hotel for a night in tel aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "cheap",
+            "entity": "price level"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "value": "tel aviv",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "Is it safe to take a vacation in israel?",
+        "intent": "other",
+        "entities": [
+          {
+            "start": 33,
+            "end": 39,
+            "value": "israel",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "Is there a good hotel in Ramallah?",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 33,
+            "value": "Ramallah",
+            "entity": "specific location"
+          },
+          {
+            "start": 11,
+            "end": 21,
+            "value": "good hotel",
+            "entity": "quality"
+          }
+        ]
+      },
+      {
+        "text": "Cheap hotel in tel-aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Cheap",
+            "entity": "price level"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "value": "tel-aviv",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "Hotel that is close to the sea",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 30,
+            "value": "close to the sea",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "David intercontinental hotel",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 22,
+            "value": "David intercontinental",
+            "entity": "hotel name"
+          }
+        ]
+      },
+      {
+        "text": "Is there a discount on hotels in Haifa?",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "Haifa",
+            "entity": "specific location"
+          },
+          {
+            "start": 11,
+            "end": 19,
+            "value": "discount",
+            "entity": "price level"
+          }
+        ]
+      },
+      {
+        "text": "Kosher hotel in Eilat",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "Eilat",
+            "entity": "specific location"
+          },
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Kosher",
+            "entity": "kosherness"
+          }
+        ]
+      },
+      {
+        "text": "Hotel close to a Synagogue in tel-aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "tel-aviv",
+            "entity": "specific location"
+          },
+          {
+            "start": 6,
+            "end": 26,
+            "value": "close to a Synagogue",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "Good hostel in tel-aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "tel-aviv",
+            "entity": "specific location"
+          },
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Good hostel",
+            "entity": "quality"
+          }
+        ]
+      },
+      {
+        "text": "Hotels outside of tel-aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 26,
+            "value": "outside of tel-aviv",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "Hotel that is close to the air-port",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 35,
+            "value": "close to the air-port",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "A motel on the way to jerusalem",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 7,
+            "value": "motel",
+            "entity": "hotel type"
+          },
+          {
+            "start": 8,
+            "end": 31,
+            "value": "on the way to jerusalem",
+            "entity": "location description"
+          }
+        ]
+      },
+      {
+        "text": "Find me hotel that offers Camel rides for kids",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 46,
+            "value": "hotel that offers Camel rides for kids",
+            "entity": "hotel feature"
+          }
+        ]
+      },
+      {
+        "text": "A hotel that have private beach in tel-aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 35,
+            "end": 43,
+            "value": "tel-aviv",
+            "entity": "specific location"
+          },
+          {
+            "start": 2,
+            "end": 31,
+            "value": "hotel that have private beach",
+            "entity": "hotel feature"
+          }
+        ]
+      },
+      {
+        "text": "Is there a good hotel in Gaza?",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 29,
+            "value": "Gaza",
+            "entity": "specific location"
+          },
+          {
+            "start": 11,
+            "end": 21,
+            "value": "good hotel",
+            "entity": "quality"
+          }
+        ]
+      },
+      {
+        "text": "Hotel with spa in tel-aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "tel-aviv",
+            "entity": "specific location"
+          },
+          {
+            "start": 0,
+            "end": 14,
+            "value": "Hotel with spa",
+            "entity": "hotel feature"
+          }
+        ]
+      },
+      {
+        "text": "A hotel in jerusalem the suitable for getting ready for a wedding",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 20,
+            "value": "jerusalem",
+            "entity": "specific location"
+          },
+          {
+            "start": 25,
+            "end": 65,
+            "value": "suitable for getting ready for a wedding",
+            "entity": "hotel feature"
+          }
+        ]
+      },
+      {
+        "text": "An Adult-only hotel in tel-aviv",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 19,
+            "value": "Adult-only hotel",
+            "entity": "hotel feature"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "value": "tel-aviv",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "I want a Boutique hotel in Jerusalem",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 27,
+            "end": 36,
+            "value": "Jerusalem",
+            "entity": "specific location"
+          },
+          {
+            "start": 9,
+            "end": 23,
+            "value": "Boutique hotel",
+            "entity": "hotel type"
+          }
+        ]
+      },
+      {
+        "text": "A good hotel in the Negev",
+        "intent": "Hotel search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 12,
+            "value": "good hotel",
+            "entity": "hotel type"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "value": "the Negev",
+            "entity": "specific location"
+          }
+        ]
+      },
+      {
+        "text": "bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "goodbye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "good bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "stop", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "end", 
+        "intent": "goodbye", 
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      }
+    ]
+  }
+}
